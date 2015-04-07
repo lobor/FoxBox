@@ -1,0 +1,28 @@
+.exemple-grid, pre{
+	padding: 10px;
+	background-color: #E7E7E7;
+	border: 1px solid #A9A9A9;
+}
+
+.exemple-grid [class*="col-"]{
+	border: 1px solid black;
+}
+
+.exemple-grid .column{
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+.exemple-grid .column:last-child{
+	margin-bottom: 0px;
+}
+
+.exemple-code pre{
+	padding: 0;
+  	margin-top: 0;
+  	margin-bottom: 0;
+  	word-break: normal;
+  	white-space: nowrap;
+  	background-color: rgba(0, 0, 0, 0);
+  	border: 0;
+}

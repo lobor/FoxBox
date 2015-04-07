@@ -1,2 +1,2 @@
 # FoxBox
-Framework CSS using properties Flex of CSS
+Framework CSS using properties Flex Box

@@ -1,0 +1,74 @@
+// main: FoxBox.less
+
+.center{
+	text-align: center;
+	&-xs{
+		@media (min-width: @screen-sm-min) {
+			text-align: center;
+		}
+	}
+	&-md{
+		@media (min-width: @screen-md-min) {
+			text-align: center;
+		}
+	}
+	&-lg{
+		@media (min-width: @screen-lg-min) {
+			text-align: center;
+		}
+	}
+}
+
+.left{
+	text-align: left;
+	&-xs{
+		@media (min-width: @screen-sm-min) {
+			text-align: left;
+		}
+	}
+	&-md{
+		@media (min-width: @screen-md-min) {
+			text-align: left;
+		}
+	}
+	&-lg{
+		@media (min-width: @screen-lg-min) {
+			text-align: left;
+		}
+	}
+}
+
+.right{
+	text-align: right;
+	&-xs{
+		@media (min-width: @screen-sm-min) {
+			text-align: right;
+		}
+	}
+	&-md{
+		@media (min-width: @screen-md-min) {
+			text-align: right;
+		}
+	}
+	&-lg{
+		@media (min-width: @screen-lg-min) {
+			text-align: right;
+		}
+	}
+}
+
+.no-compressed{
+	flex-shrink: 0;
+}
+
+.top{
+	align-self: flex-start;
+}
+
+.middle{
+	align-self: center;
+}
+
+.bottom{
+	align-self: flex-end;
+}

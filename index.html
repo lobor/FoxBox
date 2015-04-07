@@ -3,10 +3,10 @@
 	<head>
 		<title>FoxBox Framework using Flex properties - FoxBox GitHub</title>
 		<link rel="stylesheet" type="text/css" href="/dist/css/FoxBox.css" />
-		<link rel="stylesheet" type="text/css" href="/dist/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="/style.css" />
 	</head>
 	<body>
-		<div class="container">
+		<section class="container">
 			<header>
 				<nav>
 					<ul>
@@ -15,6 +15,9 @@
 						</li>
 						<li>
 							<a href="#grid" title="grid">Grid</a>
+						</li>
+						<li>
+							<a href="#link-button" title="Link - Button">Link - Button</a>
 						</li>
 						<li>
 							<a href="#text-center" title="Text Center">Text Center</a>
@@ -31,8 +34,8 @@
 					</ul>
 				</nav>
 			</header>
-			<div class="container-fix overflow">
-				<div class="row col-md">
+			<div class="body-container">
+				<article class="container-fix">
 					<h1 class="center">
 						FoxBox
 					</h1>
@@ -41,45 +44,18 @@
 					</h2>
 
 
-
-
-					<!-- Grid -->
-					<div class="title" id="grid">
-						<h3>
-							Grid
-						</h3>
-					</div>
-					<div class="exemple-grid no-compressed">
-						<div class="column">
-							<div class="col-md-1">col-md-1</div>
-							<div class="col-md-1">col-md-1</div>
-							<div class="col-md-1">col-md-1</div>
-							<div class="col-md-1">col-md-1</div>
-							<div class="col-md-1">col-md-1</div>
-							<div class="col-md-1">col-md-1</div>
-							<div class="col-md-1">col-md-1</div>
-							<div class="col-md-1">col-md-1</div>
-							<div class="col-md-1">col-md-1</div>
-							<div class="col-md-1">col-md-1</div>
-							<div class="col-md-1">col-md-1</div>
-							<div class="col-md-1">col-md-1</div>
-							<div class="col-md-1">col-md-1</div>
-						</div>
-						<div class="column">
-							<div class="col-md-1">col-md-1</div>
-							<div class="col-md-2">col-md-2</div>
-							<div class="col-md-3">col-md-3</div>
-							<div class="col-md-4">col-md-4</div>
-							<div class="col-md-2">col-md-5</div>
-						</div>
-						<div class="column">
-							<div class="col-md-11">col-md-11</div>
-							<div class="col-md-1">col-md-1</div>
-						</div>
-					</div>
-					<div class="exemple-code no-compressed">
-						<pre>
-							<code class="language-html">
+					<section>
+						<!-- Grid -->
+						<header class="title" id="grid">
+							<h1>
+								Grid
+							</h1>
+						</header>
+						<article>
+							<h2>
+								Example
+							</h2>
+							<div class="exemple-grid no-compressed">
 								<div class="column">
 									<div class="col-md-1">col-md-1</div>
 									<div class="col-md-1">col-md-1</div>
@@ -106,94 +82,300 @@
 									<div class="col-md-11">col-md-11</div>
 									<div class="col-md-1">col-md-1</div>
 								</div>
-							</code>
-						</pre>
-					</div>
+							</div>
+						</article>
+						<article>
+							<h2>
+								Code
+							</h2>
+							<pre><code>
+&lt;div class="column"&gt;
+	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="column"&gt;
+	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+	&lt;div class="col-md-2"&gt;col-md-2&lt;/div&gt;
+	&lt;div class="col-md-3"&gt;col-md-3&lt;/div&gt;
+	&lt;div class="col-md-4"&gt;col-md-4&lt;/div&gt;
+	&lt;div class="col-md-2"&gt;col-md-5&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="column"&gt;
+	&lt;div class="col-md-11"&gt;col-md-11&lt;/div&gt;
+	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+&lt;/div&gt;
+								</code>
+							</pre>
+						</article>
+					</section>
+
+
+
+
+					<!-- Link - Button -->
+					<section>
+						<header class="title" id="link-button">
+							<h1>
+								Link - Button
+							</h1>
+						</header>
+						<article>
+							<h2>
+								Example
+							</h2>
+							<div class="exemple-grid no-compressed">
+								<div class="row">
+									<p>
+										<button type="button" class="btn btn-default">Default</button>
+
+										<button type="button" class="btn btn-primary">Primary</button>
+
+										<button type="button" class="btn btn-success">Success</button>
+
+										<button type="button" class="btn btn-info">Info</button>
+
+										<button type="button" class="btn btn-warning">Warning</button>
+
+										<button type="button" class="btn btn-danger">Danger</button>
+
+										<a href="#">Link</a>
+									</p>
+								</div>
+							</div>
+						</article>
+						<article>
+							<h2>
+								Code
+							</h2>
+							<pre>
+								<code>
+&lt;button type="button" class="btn btn-default"&gt;Default&lt;/button&gt;
+
+&lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+
+&lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
+
+&lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
+
+&lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
+
+&lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
+
+&lt;a href="#"&gt;Link&lt;/a&gt;
+								</code>
+							</pre>
+						</article>
+					</section>
 
 
 					<!-- Text Center -->
-					<div class="title" id="text-center">
-						<h3>
-							Text Center
-						</h3>
-					</div>
-					<div class="exemple-grid no-compressed">
-						<div class="column">
-							<div class="col-md-4 left">col-md-4 left</div>
-							<div class="col-md-4 center">col-md-4 center</div>
-							<div class="col-md-4 right">col-md-4 right</div>
-						</div>
-					</div>
-
+					<section>
+						<header class="title" id="text-center">
+							<h1>
+								Text Center
+							</h1>
+						</header>
+						<article>
+							<h2>
+								Example
+							</h2>
+							<div class="exemple-grid no-compressed">
+								<div class="column">
+									<div class="col-md-4 left">col-md-4 left</div>
+									<div class="col-md-4 center">col-md-4 center</div>
+									<div class="col-md-4 right">col-md-4 right</div>
+								</div>
+							</div>
+						</article>
+						<article>
+							<h2>
+								Code
+							</h2>
+							<pre>
+								<code>
+&lt;div  class="column"&gt;
+	&lt;div class="col-md-4 left"&gt;col-md-4 left&lt;/div&gt;
+	&lt;div class="col-md-4 center"&gt;col-md-4 center&lt;/div&gt;
+	&lt;div class="col-md-4 right"&gt;col-md-4 right&lt;/div&gt;
+&lt;/div&gt;
+								</code>
+							</pre>
+						</article>
+					</section>
 
 
 					<!-- Vertical align -->
-					<div class="title" id="vertical-align">
-						<h3>
-							Vertical align
-						</h3>
-					</div>
-					<div class="exemple-grid no-compressed">
-						<div class="column">
-							<div class="col-md-3 top">col-md-3 top</div>
-							<div class="col-md-3 middle">col-md-3 middle</div>
-							<div class="col-md-3 bottom">col-md-3 bottom</div>
-							<div class="col-md-3">col-md-3</div>
-						</div>
-					</div>
-
+					<section>
+						<header class="title" id="vertical-align">
+							<h1>
+								Vertical align
+							</h1>
+						</header>
+						<article>
+							<h2>
+								Example
+							</h2>
+							<div class="exemple-grid no-compressed">
+								<div class="column">
+									<div class="col-md-3 top">col-md-3 top</div>
+									<div class="col-md-3 middle">col-md-3 middle</div>
+									<div class="col-md-3 bottom">col-md-3 bottom</div>
+									<div class="col-md-3">col-md-3</div>
+								</div>
+							</div>
+						</article>
+						<article>
+							<h2>
+								Code
+							</h2>
+							<pre>
+								<code>
+&lt;div class="column"&gt;
+	&lt;div class="col-md-3 top"&gt;col-md-3 top&lt;/div&gt;
+	&lt;div class="col-md-3 middle"&gt;col-md-3 middle&lt;/div&gt;
+	&lt;div class="col-md-3 bottom"&gt;col-md-3 bottom&lt;/div&gt;
+	&lt;div class="col-md-3 "&gt;col-md-3 &lt;/div&gt;
+&lt;/div&gt;
+								</code>
+							</pre>
+						</article>
+					</section>
 
 
 					<!-- Title -->
-					<div class="title" id="title">
-						<h3>
-							Title
-						</h3>
-					</div>
-					<div class="exemple-grid no-compressed">
-						<div class="title">
-							<h3>
+					<section>
+						<header class="title" id="title">
+							<h1>
 								Title
-								<small>
-									small
-								</small>
-							</h3>
-						</div>
-					</div>
+							</h1>
+						</header>
+						<article>
+							<h2>
+								Example
+							</h2>
+							<div class="exemple-grid no-compressed">
+								<div class="title">
+									<h3>
+										Title
+										<small>
+											small
+										</small>
+									</h3>
+								</div>
+								<div class="title">
+									<h3>
+										Title
+										<small>
+											<a href="">Link</a>
+											<a href="" class="btn">button</a>
+											<a href="" class="btn btn-primary">button</a>
+										</small>
+									</h3>
+								</div>
+							</div>
+						</article>
+						<article>
+							<h2>
+								Code
+							</h2>
+							<pre>
+								<code>
+&lt;div class="title"&gt;
+	&lt;h3&gt;
+		Title
+		&lt;small&gt;
+			&lt;a href=""&gt;Link&lt;/a&gt;
+			&lt;a href="" class="btn"&gt;button&lt;/a&gt;
+			&lt;a href="" class="btn btn-primary"&gt;button&lt;/a&gt;
+		&lt;/small&gt;
+	&lt;/h3&gt;
+&lt;/div&gt;
+								</code>
+							</pre>
+						</article>
+					</section>
 
 
 
 					<!-- Nav Bar -->
-					<div class="title" id="nab-bar">
-						<h3>
-							Nav Bar
-						</h3>
-					</div>
-					<div class="exemple-grid no-compressed">
-						<header>
-							<nav>
-								<ul>
-									<li class="nav-brand active">
-										<a href="/" title="FoxBox">FoxBox</a>
-									</li>
-									<li>
-										<a href="#grid" title="grid">Grid</a>
-									</li>
-									<li>
-										<a href="#text-center" title="Text Center">Text Center</a>
-									</li>
-									<li>
-										<a href="#vertical-align" title="Vertical Align">Vertical Align</a>
-									</li>
-									<li>
-										<a href="#title" title="Title">Title</a>
-									</li>
-								</ul>
-							</nav>
+					<section>
+						<header class="title" id="nab-bar">
+							<h1>
+								Nav Bar
+							</h1>
 						</header>
-					</div>
-				</div>
+						<article>
+							<h2>
+								Example
+							</h2>
+							<div class="exemple-grid no-compressed">
+								<header>
+									<nav>
+										<ul>
+											<li class="nav-brand active">
+												<a href="/" title="FoxBox">FoxBox</a>
+											</li>
+											<li>
+												<a href="#grid" title="grid">Grid</a>
+											</li>
+											<li>
+												<a href="#text-center" title="Text Center">Text Center</a>
+											</li>
+											<li>
+												<a href="#vertical-align" title="Vertical Align">Vertical Align</a>
+											</li>
+											<li>
+												<a href="#title" title="Title">Title</a>
+											</li>
+										</ul>
+									</nav>
+								</header>
+							</div>
+						</article>
+						<article>
+							<h2>
+								Code
+							</h2>
+							<pre>
+								<code>
+&lt;header&gt;
+	&lt;nav&gt;
+		&lt;ul&gt;
+			&lt;li class="nav-brand active"&gt;
+				&lt;a href="/" title="FoxBox"&gt;FoxBox&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href="#grid" title="grid"&gt;Grid&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href="#text-center" title="Text Center"&gt;Text Center&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href="#vertical-align" title="Vertical Align"&gt;Vertical Align&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;a href="#title" title="Title"&gt;Title&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/nav&gt;
+&lt;/header&gt;
+								</code>
+							</pre>
+						</article>
+					</section>
+				</article>
 			</div>
-		</div>
+		</section>
 	</body>
 </html>

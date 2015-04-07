@@ -1,6 +1,83 @@
 // main: FoxBox.less
-.btn-{
-	&link{
-
+.btn{
+	display: inline-block;
+  	padding: 6px 12px;
+  	margin-bottom: 0;
+  	font-size: 14px;
+  	font-weight: 400;
+  	line-height: 1.42857143;
+  	text-align: center;
+  	white-space: nowrap;
+  	vertical-align: middle;
+  	-ms-touch-action: manipulation;
+  	touch-action: manipulation;
+  	cursor: pointer;
+  	-webkit-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+  	background-image: none;
+  	border: 1px solid rgba(0, 0, 0, 0);
+  	border-radius: 4px;
+	color: #333;
+  	background-color: #FFF;
+  	border-color: #CCC;
+	&:hover{
+		color: #333;
+  		background-color: #E6E6E6;
+  		border-color: #ADADAD;
+		text-decoration: none;
+	}
+	&.btn{
+		&-primary{
+			color: #FFF;
+		  	background-color: #337AB7;
+		  	border-color: #2E6DA4;
+			&:hover{
+				color: #FFF;
+				background-color: #286090;
+				border-color: #204D74;
+			}
+		}
+		&-success{
+			color: #FFF;
+	  		background-color: #5CB85C;
+	  		border-color: #4CAE4C;
+			&:hover{
+				color: #FFF;
+				background-color: #449D44;
+	  			border-color: #398439;
+			}
+		}
+		&-info{
+			color: #FFF;
+			background-color: #5BC0DE;
+	  		border-color: #46B8DA;
+			&:hover{
+				color: #FFF;
+				background-color: #31B0D5;
+				border-color: #269ABC;
+			}
+		}
+		&-warning{
+			color: #FFF;
+			background-color: #F0AD4E;
+			border-color: #EEA236;
+			&:hover{
+				color: #FFF;
+				background-color: #EC971F;
+	  			border-color: #D58512;
+			}
+		}
+		&-danger{
+			color: #FFF;
+			background-color: #D9534F;
+			border-color: #D43F3A;
+			&:hover{
+				color: #FFF;
+				background-color: #C9302C;
+	  			border-color: #AC2925;
+			}
+		}
 	}
 }

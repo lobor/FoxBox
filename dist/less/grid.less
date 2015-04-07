@@ -1,0 +1,57 @@
+// main: FoxBox.less
+
+.container{
+	flex-direction: column;
+	display: flex;
+  	flex: 1;
+	&.overflow{
+		overflow: auto;
+	}
+}
+
+.body-container{
+	display: flex;
+	overflow: auto;
+	flex: 1;
+	flex-direction: column;
+}
+
+.container-fix:extend(.container all){
+	@media (max-width: @screen-xs-max) {
+		width: 100%;
+	}
+	@media (min-width: @screen-sm-min) {
+		width: 100%;
+	}
+	@media (min-width: @screen-md-min) {
+		width: 1170px;
+	}
+	@media (min-width: @screen-lg-min) {
+		width: 1170px;
+	}
+
+  	margin: auto;
+	&:extend(.overflow);
+}
+
+
+.row{
+	flex-direction: column;
+	display: flex;
+	.generate-columns(@nb-column);
+}
+
+.column{
+	flex-direction: row;
+	display: flex;
+	.generate-row(@nb-row);
+}
+
+.col-md{
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+[class*="col-"]{
+	padding: @padding-column;
+}
