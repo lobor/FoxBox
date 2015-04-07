@@ -4,17 +4,18 @@
 	border: 1px solid #A9A9A9;
 }
 
-.exemple-grid [class*="col-"]{
+.exemple-grid [class*="col-"], .exemple-grid .row, .exemple-grid .column{
 	border: 1px solid black;
 }
 
-.exemple-grid .column{
-	height: 50px;
-	margin-bottom: 20px;
+.exemple-grid .row, .exemple-grid .column{
+	padding: 5px;
+	min-height: 50px;
 }
 
-.exemple-grid .row .column{
-	margin: 0px;
+.exemple-grid .column{
+	min-height: 50px;
+	margin-bottom: 20px;
 }
 
 .exemple-grid .column:last-child{
