@@ -51,13 +51,54 @@
 								Grid
 							</h1>
 						</header>
+						<aticle>
+							<h2>Usage</h2>
+							<section class="row">
+								<h3>Layout</h3>
+								<p>
+									For have a container fluid, you have just replace <span class="text-danger">.container-fix</span> by <span class="text-danger">.container</span>.
+									<br>
+									<span class="text-danger">.body-container</span> is required for have the scroll on the page and not on the <span class="text-danger">.container-fix</span> or <span class="text-danger">.container</span>
+								</p>
+								<pre>
+									<code>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel="stylesheet" type="text/css" href="FoxBox.css" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;section class="container"&gt;
+      &lt;header&gt;
+        ....
+      &lt;/header&gt;
+      &lt;div class="body-container"&gt;
+        &lt;article class="container-fix"&gt;
+          ....
+        &lt;/article&gt;
+     &lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+									</code>
+								</pre>
+							</section>
+							<section class="row">
+								<h3>Grid</h3>
+								<p>
+									The grid is cut in 12 parts.<br>
+									With Flex propertie we can attribuate 2 directions on child's elements, add class <span class="text-danger">.row</span> or <span class="text-danger">.column</span>.<br>
+
+									<span class="text-danger">.col-md-*</span> is using for cut the row. Replace <span class="text-danger">*</span> for numbers of part for section
+								</p>
+							</section>
+						</aticle>
 						<article>
 							<h2>
 								Example
 							</h2>
 							<div class="exemple-grid no-compressed">
 								<div class="column">
-									<div class="col-md-1">col-md-1</div>
+									column
 									<div class="col-md-1">col-md-1</div>
 									<div class="col-md-1">col-md-1</div>
 									<div class="col-md-1">col-md-1</div>
@@ -72,15 +113,37 @@
 									<div class="col-md-1">col-md-1</div>
 								</div>
 								<div class="column">
+									column
 									<div class="col-md-1">col-md-1</div>
 									<div class="col-md-2">col-md-2</div>
 									<div class="col-md-3">col-md-3</div>
 									<div class="col-md-4">col-md-4</div>
-									<div class="col-md-2">col-md-5</div>
+									<div class="col-md-2">col-md-2</div>
 								</div>
 								<div class="column">
-									<div class="col-md-11">col-md-11</div>
-									<div class="col-md-1">col-md-1</div>
+									column
+									<div class="col-md-1">col-md-11</div>
+									<div class="col-md-11">
+										col-md-11
+										<div class="row">
+											row
+											<div class="column">
+												column
+												<div class="col-md-1">col-md-1</div>
+												<div class="col-md-1">col-md-1</div>
+												<div class="col-md-1">col-md-1</div>
+												<div class="col-md-1">col-md-1</div>
+												<div class="col-md-1">col-md-1</div>
+												<div class="col-md-1">col-md-1</div>
+												<div class="col-md-1">col-md-1</div>
+												<div class="col-md-1">col-md-1</div>
+												<div class="col-md-1">col-md-1</div>
+												<div class="col-md-1">col-md-1</div>
+												<div class="col-md-1">col-md-1</div>
+												<div class="col-md-1">col-md-1</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</article>
@@ -88,9 +151,7 @@
 							<h2>
 								Code
 							</h2>
-							<pre><code>
-&lt;div class="column"&gt;
-	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+							<pre><code>&lt;div class="column"&gt;
 	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
 	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
 	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
@@ -109,14 +170,31 @@
 	&lt;div class="col-md-2"&gt;col-md-2&lt;/div&gt;
 	&lt;div class="col-md-3"&gt;col-md-3&lt;/div&gt;
 	&lt;div class="col-md-4"&gt;col-md-4&lt;/div&gt;
-	&lt;div class="col-md-2"&gt;col-md-5&lt;/div&gt;
+	&lt;div class="col-md-2"&gt;col-md-2&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="column"&gt;
-	&lt;div class="col-md-11"&gt;col-md-11&lt;/div&gt;
-	&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
-&lt;/div&gt;
-								</code>
-							</pre>
+	&lt;div class="col-md-1"&gt;col-md-11&lt;/div&gt;
+	&lt;div class="col-md-11"&gt;
+		col-md-11
+		&lt;div class="row"&gt;
+			row
+			&lt;div class="column"&gt;
+				&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+				&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+				&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+				&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+				&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+				&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+				&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+				&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+				&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+				&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+				&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+				&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 						</article>
 					</section>
 
@@ -134,24 +212,22 @@
 							<h2>
 								Example
 							</h2>
-							<div class="exemple-grid no-compressed">
-								<div class="row">
-									<p>
-										<button type="button" class="btn btn-default">Default</button>
+							<div class="row exemple-grid no-compressed">
+								<p>
+									<button type="button" class="btn btn-default">Default</button>
 
-										<button type="button" class="btn btn-primary">Primary</button>
+									<button type="button" class="btn btn-primary">Primary</button>
 
-										<button type="button" class="btn btn-success">Success</button>
+									<button type="button" class="btn btn-success">Success</button>
 
-										<button type="button" class="btn btn-info">Info</button>
+									<button type="button" class="btn btn-info">Info</button>
 
-										<button type="button" class="btn btn-warning">Warning</button>
+									<button type="button" class="btn btn-warning">Warning</button>
 
-										<button type="button" class="btn btn-danger">Danger</button>
+									<button type="button" class="btn btn-danger">Danger</button>
 
-										<a href="#">Link</a>
-									</p>
-								</div>
+									<a href="#">Link</a>
+								</p>
 							</div>
 						</article>
 						<article>
@@ -270,13 +346,6 @@
 										Title
 										<small>
 											small
-										</small>
-									</h3>
-								</div>
-								<div class="title">
-									<h3>
-										Title
-										<small>
 											<a href="#">Link</a>
 											<a href="#" class="btn">button</a>
 											<a href="#" class="btn btn-primary">button</a>
@@ -295,6 +364,7 @@
 	&lt;h3&gt;
 		Title
 		&lt;small&gt;
+			small
 			&lt;a href="#"&gt;Link&lt;/a&gt;
 			&lt;a href="#" class="btn"&gt;button&lt;/a&gt;
 			&lt;a href="#" class="btn btn-primary"&gt;button&lt;/a&gt;

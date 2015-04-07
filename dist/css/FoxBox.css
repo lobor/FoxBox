@@ -573,39 +573,51 @@ article h6 {
 }
 .row .col-md-1 {
   flex-basis: 8.33333333%;
+  box-sizing: border-box;
 }
 .row .col-md-2 {
   flex-basis: 16.66666667%;
+  box-sizing: border-box;
 }
 .row .col-md-3 {
   flex-basis: 25%;
+  box-sizing: border-box;
 }
 .row .col-md-4 {
   flex-basis: 33.33333333%;
+  box-sizing: border-box;
 }
 .row .col-md-5 {
   flex-basis: 41.66666667%;
+  box-sizing: border-box;
 }
 .row .col-md-6 {
   flex-basis: 50%;
+  box-sizing: border-box;
 }
 .row .col-md-7 {
   flex-basis: 58.33333333%;
+  box-sizing: border-box;
 }
 .row .col-md-8 {
   flex-basis: 66.66666667%;
+  box-sizing: border-box;
 }
 .row .col-md-9 {
   flex-basis: 75%;
+  box-sizing: border-box;
 }
 .row .col-md-10 {
   flex-basis: 83.33333333%;
+  box-sizing: border-box;
 }
 .row .col-md-11 {
   flex-basis: 91.66666667%;
+  box-sizing: border-box;
 }
 .row .col-md-12 {
   flex-basis: 100%;
+  box-sizing: border-box;
 }
 .column {
   flex-direction: row;
@@ -613,39 +625,51 @@ article h6 {
 }
 .column .col-md-1 {
   flex-basis: 8.33333333%;
+  box-sizing: border-box;
 }
 .column .col-md-2 {
   flex-basis: 16.66666667%;
+  box-sizing: border-box;
 }
 .column .col-md-3 {
   flex-basis: 25%;
+  box-sizing: border-box;
 }
 .column .col-md-4 {
   flex-basis: 33.33333333%;
+  box-sizing: border-box;
 }
 .column .col-md-5 {
   flex-basis: 41.66666667%;
+  box-sizing: border-box;
 }
 .column .col-md-6 {
   flex-basis: 50%;
+  box-sizing: border-box;
 }
 .column .col-md-7 {
   flex-basis: 58.33333333%;
+  box-sizing: border-box;
 }
 .column .col-md-8 {
   flex-basis: 66.66666667%;
+  box-sizing: border-box;
 }
 .column .col-md-9 {
   flex-basis: 75%;
+  box-sizing: border-box;
 }
 .column .col-md-10 {
   flex-basis: 83.33333333%;
+  box-sizing: border-box;
 }
 .column .col-md-11 {
   flex-basis: 91.66666667%;
+  box-sizing: border-box;
 }
 .column .col-md-12 {
   flex-basis: 100%;
+  box-sizing: border-box;
 }
 .col-md,
 header nav {
@@ -746,4 +770,16 @@ a:hover {
 }
 a:visited {
   color: #337ab7;
+}
+.text-danger {
+  color: #d9534f;
+}
+.text-warning {
+  color: #f0ad4e;
+}
+.text-success {
+  color: #5cb85c;
+}
+.text-info {
+  color: #5bc0de;
 }
