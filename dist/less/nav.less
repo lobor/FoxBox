@@ -14,17 +14,17 @@ header{
 		  	list-style: none;
 			flex-direction: row;
 			display: flex;
-			border-bottom: 1px solid #000;
+			border-bottom: 1px solid @color-border-navbar;
 			flex: 1;
 			li{
 				align-items: center;
 				display: flex;
 				&.active, &:hover{
-					border-bottom: 1px solid @color-border-navbar;
+					border-bottom: 1px solid @color-border-link-navbar;
 					padding-top: 1px;
 				}
 				&:hover{
-					border-bottom: 1px solid @color-border-hover-navbar;
+					border-bottom: 1px solid @color-border-link-hover-navbar;
 				}
 				a, a:visited{
 					line-height: @height-header;
