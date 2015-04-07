@@ -1,0 +1,15 @@
+// main: FoxBox.less
+
+.generate-columns(@n, @i: 1) when (@i =< @n) {
+  .col-md-@{i} {
+    flex-basis: (@i * 100% / @n);
+  }
+  .generate-columns(@n, (@i + 1));
+}
+
+.generate-row(@n, @i: 1) when (@i =< @n) {
+  .col-md-@{i} {
+    flex-basis: (@i * 100% / @n);
+  }
+  .generate-row(@n, (@i + 1));
+}

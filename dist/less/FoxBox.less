@@ -1,0 +1,174 @@
+// out:  ../css/FoxBox.css
+// compress: false
+
+@import 'variables.less';
+@import 'mixins.less';
+@import 'normilize.less';
+@import 'nav.less';
+@import 'button.less';
+
+body, html{
+	display: flex;
+	flex: 1;
+	margin: 0px;
+	height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+	flex-shrink: 0;
+}
+
+.container{
+	flex-direction: column;
+	display: flex;
+  	flex: 1;
+	&.overflow{
+		overflow: auto;
+	}
+}
+
+.container-fix:extend(.container all){
+	@media (max-width: @screen-xs-max) {
+		width: 100%;
+	}
+	@media (min-width: @screen-sm-min) {
+		width: 100%;
+	}
+	@media (min-width: @screen-md-min) {
+		text-align: center;
+	}
+	@media (min-width: @screen-lg-min) {
+		width: 1170px;
+	}
+
+  	margin: auto;
+	&:extend(.overflow);
+}
+
+
+.row{
+	flex-direction: column;
+	display: flex;
+	.generate-columns(@nb-column);
+}
+
+.column{
+	flex-direction: row;
+	display: flex;
+	.generate-row(@nb-row);
+}
+
+.col-md{
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+a{
+	text-decoration: none;
+	color: #337ab7;
+	&:hover{
+		text-decoration: underline;
+	}
+	&:visited{
+		color: #337ab7;
+	}
+}
+
+.center{
+	text-align: center;
+	&-xs{
+		@media (min-width: @screen-sm-min) {
+			text-align: center;
+		}
+	}
+	&-md{
+		@media (min-width: @screen-md-min) {
+			text-align: center;
+		}
+	}
+	&-lg{
+		@media (min-width: @screen-lg-min) {
+			text-align: center;
+		}
+	}
+}
+
+.left{
+	text-align: left;
+	&-xs{
+		@media (min-width: @screen-sm-min) {
+			text-align: left;
+		}
+	}
+	&-md{
+		@media (min-width: @screen-md-min) {
+			text-align: left;
+		}
+	}
+	&-lg{
+		@media (min-width: @screen-lg-min) {
+			text-align: left;
+		}
+	}
+}
+
+.right{
+	text-align: right;
+	&-xs{
+		@media (min-width: @screen-sm-min) {
+			text-align: right;
+		}
+	}
+	&-md{
+		@media (min-width: @screen-md-min) {
+			text-align: right;
+		}
+	}
+	&-lg{
+		@media (min-width: @screen-lg-min) {
+			text-align: right;
+		}
+	}
+}
+
+
+.title{
+	padding-top: 20px;
+	padding-bottom: 10px;
+  	border-bottom: 1px solid #000;
+	margin: 20px 0;
+	flex-shrink: 0;
+	h1, h2, h3, h4, h5, h6{
+		margin: 0px;
+		display: flex;
+		small{
+			align-self: flex-end;
+			flex: 1;
+			flex-direction: column;
+			text-align: right;
+		  	color: #808080;
+		  	font-weight: normal;
+		  	font-size: 0.7em;
+		}
+	}
+}
+
+[class*="col-"]{
+	padding: 0 @padding-column;
+}
+
+.no-compressed{
+	flex-shrink: 0;
+}
+
+.top{
+	align-self: flex-start;
+}
+
+.middle{
+	align-self: center;
+}
+
+.bottom{
+	align-self: flex-end;
+}

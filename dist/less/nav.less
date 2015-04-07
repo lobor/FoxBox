@@ -1,0 +1,38 @@
+// main: FoxBox.less
+
+// Header and nav
+header{
+	display: flex;
+	height: @height-header;
+	nav:extend(.col-md){
+		display: flex;
+		ul{
+			padding: 0px;
+		  	margin: 0px;
+		  	list-style: none;
+			flex-direction: row;
+			display: flex;
+			border-bottom: 1px solid #000;
+			flex: 1;
+			li{
+				align-items: center;
+				display: flex;
+				&.active, &:hover{
+					border-bottom: 1px solid @color-border-navbar;
+					padding-top: 1px;
+				}
+				&:hover{
+					border-bottom: 1px solid @color-border-hover-navbar;
+				}
+				a, a:visited{
+					line-height: @height-header;
+					padding: 0 15px;
+					color: @color-link-navbar;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
