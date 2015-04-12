@@ -1,0 +1,28 @@
+{
+  "name": "FoxBox",
+  "version": "0.0.1",
+  "homepage": "https://github.com/lobor/FoxBox",
+  "authors": [
+    "lionelbertrand <lionel.bertrand@ymail.com>"
+  ],
+  "description": "Framework CSS using properties Flex Box",
+  "main": "dist/css/FoxBox.css",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "flex",
+    "box",
+    "grid",
+    "framework",
+    "less"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
