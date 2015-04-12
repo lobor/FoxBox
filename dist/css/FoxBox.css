@@ -622,6 +622,7 @@ article h6 {
 .column {
   flex-direction: row;
   display: flex;
+  flex: 1;
 }
 .column .col-md-1 {
   flex-basis: 8.33333333%;
