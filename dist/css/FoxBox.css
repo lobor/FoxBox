@@ -676,6 +676,10 @@ article h6 {
 header nav {
   flex-basis: 0;
   flex-grow: 1;
+  display: flex;
+}
+.expend {
+  flex: 1;
 }
 [class*="col-"] {
   padding: 5px;
