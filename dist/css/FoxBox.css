@@ -569,7 +569,7 @@ article h6 {
 }
 .row {
   flex-direction: column;
-  display: flex;
+  flex: 1;
 }
 .row .col-md-1 {
   flex-basis: 8.33333333%;
